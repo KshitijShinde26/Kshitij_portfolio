@@ -249,28 +249,94 @@ footer{
     padding:20px;
 }
 
-/* ===== MOBILE ===== */
+/* =============================
+   PERFECT MOBILE RESPONSIVE FIX
+============================= */
 
-@media(max-width:900px){
+@media (max-width: 768px) {
 
-.hero{
-    flex-direction:column;
-    text-align:center;
-}
+    /* NAVBAR */
+    .glass-nav{
+        width: 94%;
+        padding: 12px 16px;
+        top: 8px;
+    }
 
-.hero-right img{
-    width:220px;
-}
+    .logo{
+        font-size: 18px;
+    }
 
-.timeline{
-    flex-direction:column;
-}
+    .logo span{
+        font-size: 11px;
+    }
 
-.timeline img{
-    width:100%;
-}
+    .nav-links{
+        gap:14px;
+    }
 
-.nav-links{
-    display:none;
+    .nav-links a{
+        font-size:14px;
+    }
+
+    /* HERO SECTION */
+    .hero{
+        flex-direction: column;
+        text-align: center;
+        padding: 25px 18px;
+        gap: 20px;
+        width: 94%;
+    }
+
+    .hero-left{
+        min-width:100%;
+    }
+
+    .hero-left h1{
+        font-size: 32px;
+        line-height: 1.2;
+    }
+
+    .hero-left h2{
+        font-size: 20px;
+    }
+
+    .hero-left p{
+        font-size: 15px;
+        max-width: 100%;
+    }
+
+    /* IMAGE */
+    .hero-right img{
+        width: 200px;
+        max-width: 90%;
+    }
+
+    /* BUTTON */
+    .btn{
+        padding: 9px 16px;
+        font-size:14px;
+    }
+
+    /* SECTIONS */
+    section{
+        width: 94%;
+        margin:20px auto;
+    }
+
+    .section-box{
+        padding:20px;
+    }
+
+    /* TIMELINE */
+    .timeline{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .timeline img{
+        width:100%;
+        max-width: 280px;
+    }
+
 }
 }
